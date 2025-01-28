@@ -1,0 +1,1 @@
+DROP INDEX `kv_store_tenant_id_unique`;

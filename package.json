@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "dev": "wrangler dev",
+    "prod": "wrangler dev --remote",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:migrate": "drizzle-kit migrate",
+    "drizzle:dev": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.39.0",
+    "hono": "^4.6.19"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "@types/node": "^22.12.0",
+    "drizzle-kit": "^0.30.3",
+    "wrangler": "^3.101.0"
+  }
+}
