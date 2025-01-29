@@ -4,7 +4,7 @@ import { HTTPException } from 'hono/http-exception';
 
 const baseRoutes = new Hono<{ Variables: Variables, }>();
 
-baseRoutes.get('/', (c) => c.text('Hello Hono!💀'));
+baseRoutes.get('/', (c) => c.text('Hello Hono!😊'));
 
 baseRoutes.get('/id', (c) => {
     try {
